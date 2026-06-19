@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nexus CRM
+# Cadence
 
 ### AI-powered CRM with meeting intelligence
 
@@ -25,7 +25,7 @@ A full-stack CRM that turns meeting transcripts into action items, flags deal ri
 
 ## Overview
 
-Nexus CRM is a sales workspace built around **AI meeting intelligence**. Paste a call transcript and the assistant extracts a summary, action items (with owners and due dates), sentiment, and a draft follow-up email. The pipeline watches itself — stalled and at-risk deals are surfaced automatically, and a weekly summary is written for you.
+Cadence is a sales workspace built around **AI meeting intelligence**. Paste a call transcript and the assistant extracts a summary, action items (with owners and due dates), sentiment, and a draft follow-up email. The pipeline watches itself — stalled and at-risk deals are surfaced automatically, and a weekly summary is written for you.
 
 > **Try it instantly:** the app ships with a one-click **demo login** and rich seeded data, so you can explore the full product without any setup. Connect a Postgres database to switch from demo data to real persistence.
 
@@ -107,7 +107,7 @@ Open [http://localhost:3000](http://localhost:3000) and click **“Explore the d
 Point `DATABASE_URL` at a Postgres instance (e.g. a free [Neon](https://neon.tech) database), then:
 ```bash
 npm run db:push   # create tables
-npm run db:seed   # seed demo data (login: demo@nexuscrm.io / demo)
+npm run db:seed   # seed demo data (login: demo@cadencecrm.io / demo)
 npm run dev
 ```
 

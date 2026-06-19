@@ -10,14 +10,14 @@ async function main() {
   const password = await bcrypt.hash("demo", 10);
 
   const avery = await prisma.user.upsert({
-    where: { email: "demo@nexuscrm.io" },
+    where: { email: "demo@cadencecrm.io" },
     update: {},
-    create: { name: "Avery Chen", email: "demo@nexuscrm.io", password, role: "ADMIN" },
+    create: { name: "Avery Chen", email: "demo@cadencecrm.io", password, role: "ADMIN" },
   });
   const marco = await prisma.user.upsert({
-    where: { email: "marco@nexuscrm.io" },
+    where: { email: "marco@cadencecrm.io" },
     update: {},
-    create: { name: "Marco Rossi", email: "marco@nexuscrm.io", password, role: "SALES_REP" },
+    create: { name: "Marco Rossi", email: "marco@cadencecrm.io", password, role: "SALES_REP" },
   });
 
   const sofia = await prisma.contact.create({
@@ -66,7 +66,7 @@ async function main() {
     },
   });
 
-  console.log("Seeded demo data. Admin login: demo@nexuscrm.io / demo");
+  console.log("Seeded demo data. Admin login: demo@cadencecrm.io / demo");
   void avery;
 }
 

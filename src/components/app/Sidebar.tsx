@@ -34,12 +34,12 @@ export const Sidebar = () => {
     <div className="flex h-full flex-col border-r border-border bg-card/40">
       <Link href="/" className="flex items-center gap-2.5 px-6 py-5">
         <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-gradient font-black text-white shadow-md shadow-primary/30">
-          N
+          C
         </div>
         <div className="leading-tight">
-          <div className="text-sm font-bold tracking-tight">Nexus CRM</div>
+          <div className="text-sm font-bold tracking-tight">Cadence</div>
           <div className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground">
-            AI Sales
+            AI CRM
           </div>
         </div>
       </Link>

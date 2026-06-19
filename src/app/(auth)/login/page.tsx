@@ -38,12 +38,12 @@ export default function LoginPage() {
 
   const demoLogin = async () => {
     setDemoLoading(true);
-    await doLogin("demo@nexuscrm.io", "demo");
+    await doLogin("demo@cadencecrm.io", "demo");
     setDemoLoading(false);
   };
 
   return (
-    <AuthShell title="Welcome back" subtitle="Sign in to your Nexus CRM workspace.">
+    <AuthShell title="Welcome back" subtitle="Sign in to your Cadence workspace.">
       <Button
         onClick={demoLogin}
         disabled={demoLoading}
@@ -66,7 +66,7 @@ export default function LoginPage() {
           <Label htmlFor="email" className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             Email
           </Label>
-          <Input id="email" name="email" type="email" defaultValue="demo@nexuscrm.io" required />
+          <Input id="email" name="email" type="email" defaultValue="demo@cadencecrm.io" required />
         </div>
         <div className="space-y-2">
           <Label htmlFor="password" className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">

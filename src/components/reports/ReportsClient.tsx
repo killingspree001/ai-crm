@@ -30,7 +30,7 @@ const trend = [
 
 const tooltipStyle = {
   backgroundColor: "rgba(20,22,30,0.92)",
-  border: "1px solid rgba(59,130,246,0.3)",
+  border: "1px solid rgba(16,185,129,0.3)",
   borderRadius: "10px",
   fontSize: 12,
 };
@@ -102,13 +102,13 @@ export function ReportsClient({
               <BarChart data={stageData}>
                 <defs>
                   <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#3b82f6" />
-                    <stop offset="100%" stopColor="#38bdf8" stopOpacity={0.4} />
+                    <stop offset="0%" stopColor="#10b981" />
+                    <stop offset="100%" stopColor="#34d399" stopOpacity={0.4} />
                   </linearGradient>
                 </defs>
                 <XAxis dataKey="name" stroke="#64748b" fontSize={11} axisLine={false} tickLine={false} />
                 <YAxis stroke="#64748b" fontSize={11} axisLine={false} tickLine={false} tickFormatter={(v) => `$${v / 1000}k`} />
-                <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(59,130,246,0.08)" }} formatter={(v) => formatCurrency(Number(v))} />
+                <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "rgba(16,185,129,0.08)" }} formatter={(v) => formatCurrency(Number(v))} />
                 <Bar dataKey="value" fill="url(#bar)" radius={[6, 6, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
@@ -152,14 +152,14 @@ export function ReportsClient({
               <AreaChart data={trend}>
                 <defs>
                   <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.4} />
-                    <stop offset="100%" stopColor="#3b82f6" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#10b981" stopOpacity={0.4} />
+                    <stop offset="100%" stopColor="#10b981" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <XAxis dataKey="m" stroke="#64748b" fontSize={11} axisLine={false} tickLine={false} />
                 <YAxis stroke="#64748b" fontSize={11} axisLine={false} tickLine={false} tickFormatter={(v) => `$${v}k`} />
                 <Tooltip contentStyle={tooltipStyle} formatter={(v) => `$${Number(v)}k`} />
-                <Area type="monotone" dataKey="v" stroke="#3b82f6" strokeWidth={2.5} fill="url(#area)" />
+                <Area type="monotone" dataKey="v" stroke="#10b981" strokeWidth={2.5} fill="url(#area)" />
               </AreaChart>
             </ResponsiveContainer>
           </div>

@@ -29,7 +29,7 @@ export const Topbar = () => {
           <div className="hidden text-right sm:block">
             <div className="text-xs font-semibold leading-tight">{name}</div>
             <div className="text-[10px] text-muted-foreground">
-              {session?.user?.email ?? "demo@nexuscrm.io"}
+              {session?.user?.email ?? "demo@cadencecrm.io"}
             </div>
           </div>
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-gradient text-xs font-bold text-white">

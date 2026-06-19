@@ -11,10 +11,10 @@ import type {
 // browsable as a showcase. With a real database connected, live data is used instead.
 
 export const demoTeam: TeamMember[] = [
-  { id: "u1", name: "Avery Chen", email: "avery@nexuscrm.io", role: "ADMIN" },
-  { id: "u2", name: "Marco Rossi", email: "marco@nexuscrm.io", role: "SALES_REP" },
-  { id: "u3", name: "Priya Nair", email: "priya@nexuscrm.io", role: "SALES_REP" },
-  { id: "u4", name: "Dana Okafor", email: "dana@nexuscrm.io", role: "VIEWER" },
+  { id: "u1", name: "Avery Chen", email: "avery@cadencecrm.io", role: "ADMIN" },
+  { id: "u2", name: "Marco Rossi", email: "marco@cadencecrm.io", role: "SALES_REP" },
+  { id: "u3", name: "Priya Nair", email: "priya@cadencecrm.io", role: "SALES_REP" },
+  { id: "u4", name: "Dana Okafor", email: "dana@cadencecrm.io", role: "VIEWER" },
 ];
 
 export const demoContacts: ContactView[] = [
